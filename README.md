@@ -14,6 +14,11 @@
 +------------------------------------------------------------------------------+
 ```
 
+<video id="video" controls preload="metadata" crossorigin="anonymous">
+    <source src="https://github.com/perez-alejandrodaniel/cyberciruja_odyssey/blob/main/video/flashparty_2022.mkv?raw=true" type="video/webm">
+    Your browser does not support the video tag.
+</video>
+
 ## La maquina
 
 La Magnabox Odyssey 2 era una maquina basada en un microcontrolador (ni siquiera
