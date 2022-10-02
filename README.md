@@ -14,10 +14,16 @@
 +------------------------------------------------------------------------------+
 ```
 
-<video id="video" controls preload="metadata" crossorigin="anonymous">
-    <source src="https://github.com/perez-alejandrodaniel/cyberciruja_odyssey/blob/main/video/flashparty_2022.mkv?raw=true" type="video/webm">
-    Your browser does not support the video tag.
-</video>
+## ¿Flash Party?
+Flashparty es un evento basado en el modelo “demoparty” que tiene su origen en
+la sub-cultura de la demoscene.
+https://flashparty.rebelion.digital/index.php?lang=es
+
+El pasado primero de Octubre fue mostrada esta humilde demo de 250 bytes, como
+parte de la categoria "Demo en 256 bytes"
+
+Video de la demo: 
+https://github.com/perez-alejandrodaniel/cyberciruja_odyssey/blob/main/video/flashparty_2022.mkv
 
 ## La maquina
 
