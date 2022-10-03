@@ -7,12 +7,104 @@
     San Floppy, a cyberciruja odyssey                    |                   |
                                                          |     #       #     |
                                                          |                   |
-   Demo 256 bytes intro para la gloriosa                 |        ---        |
-           Magnabox Odyssey 2                            |                  .|
+   Demo 256 bytes intro for the glorious                 |        ---        |
+           Magnavox Odyssey 2                            |                  .|
                                                          +-------------------+
 
 +------------------------------------------------------------------------------+
 ```
+
+## Flash Party?
+Flashparty is an event based on the "demoparty" model, which in turn has its origin on
+the demoscene subculture.
+https://flashparty.rebelion.digital/index.php?lang=en
+
+This humble 250-byte demo was shown at that party, which took place during the first days of October 2022. It appeared as part of the "Demos using 256 bytes" category.
+
+Video of the demo: 
+https://github.com/perez-alejandrodaniel/cyberciruja_odyssey/blob/main/video/flashparty_2022.mkv
+
+## The machine
+
+The Magnavox Odyssey 2 was a machine based on an Intel 8048 microcontroller (not even a microprocessor). By that time it was already a quite limited chip but it managed to appear in this console and in some others, as both the main processing unit and as a support chip.
+Fun fact, it's the same microcontroller that was used as an internal controller in the keyboard used in the first IBM PCs.
+
+## Specs
+
+* CPU:
+    * Intel 8048 8-bit clocked at 5.37 MHz (NTSC regions) or 5.91 MHz (PAL regions)
+* Memory:
+    * Built-in to the microcontroller: 64 bytes
+    * External: 128 bytes
+    * Audio/video RAM: 128 bytes
+    * BIOS ROM: 1024 bytes
+* Video:
+    * Intel 8244 (NTSC) o 8245 (PAL) custom IC
+    * Resolution of 160×200 pixels (NTSC)
+      Fixed 16-color pallete (8 basic colors: black, blue, green, cyan, red,
+      magenta, yellow and white) con an intensity bit that can be used to cut the brightness in half.
+* Audio:
+   * The same video chip can generate mono sound using a 24-bit shift register, with a
+    configurable two frequency noise generator
+
+## Why this machine?
+
+Why not? Thinking about the cyberciruja ideas that involve reusing legacy hardware
+I wanted to use this low spec machine. Very interesting things can be made with very simple hardware and software, or at least learn a bit and spend some time developing as we used to.
+
+## Compiling the demo
+
+In order to compile the source code, you need a Windows computer and to follow these steps:
+
+1. Download and decompress the compiler (aswcurr.zip). In the example<br>
+```
+C:\temp
+```
+2. Copy both source files to the decompressed directory (C:\temp\aswcurr)
+3. Open a PowerShell window in that directory and run:<br>
+```
+.\bin\asw.exe .\flashparty_2022.asm
+```
+
+This will generate an intermediate file flashparty_2022.p. 
+That file then needs to be processed once more.
+
+4. Without changing directories, run:<br>
+   ```
+   .\bin\p2bin .\flashparty_2022.p .\flashparty_2022.raw
+   ```
+
+This will generate a 250-byte file with the demo executable.
+The problem is that the emulator is expecting a valid ROM size. 
+In order to solve this problem we can tell the tool to fill out the rest of the binary so it matches the expected cartridge size.
+
+5. In the same directory, run:<br>
+   ```
+   .\bin\p2bin .\flashparty_2022.p -r 1024-3071
+   ```
+
+This will generate a 2048 byte file that matches the structure of the cartridges. 
+
+## Running the demo
+
+The demo was tested using the O2EM emulator (http://o2em.sourceforge.net/#)
+Once decompressed, the emulator waits for the BIOS of the odyssey to be present in the
+BIOS directory, and the ROM in the same folder.
+In the given folder those are already provided, so after extracting them
+we can open a PowerShell terminal and run<br>
+  ```
+  .\o2em.exe -wsize=1 -scanlines flashparty_2022.bin
+  ```
+
+After running that, the emulator should start, ask for a digit (0-9) and then
+it starts. The demo doesn't have any sound and it's endless, I hope you like it. :D
+
+## Next steps (?)
+
+* ~~Translate this text to English.~~
+* I'd like to use this and keep on studying the platform, then create a game using the gained knowledge.
+
+---
 
 ## ¿Flash Party?
 Flashparty es un evento basado en el modelo “demoparty” que tiene su origen en
@@ -27,14 +119,14 @@ https://github.com/perez-alejandrodaniel/cyberciruja_odyssey/blob/main/video/fla
 
 ## La maquina
 
-La Magnabox Odyssey 2 era una maquina basada en un microcontrolador (ni siquiera
+La Magnavox Odyssey 2 era una maquina basada en un microcontrolador (ni siquiera
 un microprocesador) Intel 8048, que ya para la epoca era limitado pero supo dar
-batalla en esta consola y algunas otras ya sea como unidad de procesamient
+batalla en esta consola y algunas otras ya sea como unidad de procesamiento
 central como tambien como chip de soporte. Nota curiosa, es el mismo micro que
 se usaba como controlador de teclado en las primeras PCs, micro que fue usado
 mucho tiempo cumpliendo esta funcion.
 
-## Caracteristicas:
+## Caracteristicas
 
 * CPU
     * Intel 8048 8-bit funcionando a 5.37 MHz (NTSC) o 5.91 MHz (PAL)
