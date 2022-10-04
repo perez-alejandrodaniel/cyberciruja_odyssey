@@ -121,3 +121,7 @@ todavia, por lo pronto no quiero colgar el tema de pasarles mi mini demo.~~
 * Me gustaria tomar esto, seguir estudiando un poco mas la plataforma y crear un
 juego tratando de aprovechar el conocimiento adquirido.
 
+## Referencias
+
+* [https://web.archive.org/web/20070629054939/http://soeren.informationstheater.de/g7000/Index.html] (https://web.archive.org/web/20070629054939/http://soeren.informationstheater.de/g7000/Index.html)
+* [http://www.atarihq.com/danb/o2.shtml](http://www.atarihq.com/danb/o2.shtml)
