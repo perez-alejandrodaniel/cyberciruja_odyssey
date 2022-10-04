@@ -8,13 +8,13 @@
 ;	                                                     |     #       #     |
 ;	                                                     |                   |
 ;   Demo 256 bytes intro for the glorious                |        ---        |
-;           Magnabox Odyssey 2	                         |                  .|
+;           Magnavox Odyssey 2	                         |                  .|
 ;	                                                     +-------------------+
 ;
 ;------------------------------------------------------------------------------
 ;
 ; <-<- Flashparty 2022 - 256 bytes intro by Ale Perez
-; Platform: Magnabox Odyssey 2 (Philips Videopac PAL) (MCS-48 assembler).
+; Platform: Magnavox Odyssey 2 (Philips Videopac PAL) (MCS-48 assembler).
 ;
 ; Software:
 ;   * Compiler ASW 1.42 to compile

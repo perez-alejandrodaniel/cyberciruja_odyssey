@@ -8,7 +8,7 @@
                                                          |     #       #     |
                                                          |                   |
    Demo 256 bytes intro para la gloriosa                 |        ---        |
-           Magnabox Odyssey 2                            |                  .|
+           Magnavox Odyssey 2                            |                  .|
                                                          +-------------------+
 
 +------------------------------------------------------------------------------+
@@ -27,7 +27,7 @@ https://github.com/perez-alejandrodaniel/cyberciruja_odyssey/blob/main/video/fla
 
 ## La maquina
 
-La Magnabox Odyssey 2 era una maquina basada en un microcontrolador (ni siquiera
+La Magnavox Odyssey 2 era una maquina basada en un microcontrolador (ni siquiera
 un microprocesador) Intel 8048, que ya para la epoca era limitado pero supo dar
 batalla en esta consola y algunas otras ya sea como unidad de procesamient
 central como tambien como chip de soporte. Nota curiosa, es el mismo micro que
